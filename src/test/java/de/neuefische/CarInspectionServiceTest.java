@@ -17,7 +17,7 @@ class CarInspectionServiceTest {
     }
 
     @Test
-    void checksForSeatBelt() {
+    void returnsTrue_WhenCarHasSeatBelt() {
         //GIVEN
         Car car = new Car(4,2,true, true);
         CarInspectionService carInspectionService = new CarInspectionService();
@@ -28,7 +28,7 @@ class CarInspectionServiceTest {
     }
 
     @Test
-    void checksForAirbag() {
+    void returnsTrue_WhenCarHasAirbag() {
         //GIVEN
         Car car = new Car(4,2,true, true);
         CarInspectionService carInspectionService = new CarInspectionService();
@@ -39,7 +39,7 @@ class CarInspectionServiceTest {
     }
 
     @Test
-    void checksForDoors() {
+    void returnsTrue_WhenCarHas3Or5Doors() {
         //GIVEN
         Car car = new Car(4,3,true,true);
         CarInspectionService carInspectionService = new CarInspectionService();
@@ -50,7 +50,7 @@ class CarInspectionServiceTest {
     }
 
     @Test
-    void checkCar() {
+    void returnsTrue_WhenCarPassesAllChecks() {
         //GIVEN
         Car car = new Car(4,4,true,true);
         CarInspectionService carInspectionService = new CarInspectionService();
